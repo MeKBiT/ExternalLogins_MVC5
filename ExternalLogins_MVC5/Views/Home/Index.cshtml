@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@using (Html.BeginForm("ExternalLogin", "Home", FormMethod.Post, new { @class = "form-horizontal", @role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <br />
+    <input type="submit" id="Google" name="provider" value="Google" title="Log in using your Google account" style="cursor:pointer;" />
+    <br />
+    <input type="submit" id="Twitter" name="provider" value="Twitter" title="Log in using your Twitter account" style="cursor:pointer;",>
+    <br />
+    <input type="submit" id="Facebook" name="provider" value="Facebook" title="Log in using your Facebook account" style="cursor:pointer;"/>
+    <br />
+    <input type="submit" id="Microsoft" name="provider" value="Microsoft" title="Log in using your Microsoft account" style="cursor:pointer;"/>
+    <br />
+    <input type="submit" id="LinkedIn" name="provider" value="LinkedIn" title="Log in using your Facebook account" style="cursor:pointer;" />
+    <br />
+    <input type="submit" id="GitHub" name="provider" value="GitHub" title="Log in using your Facebook account" style="cursor:pointer;" />
+}

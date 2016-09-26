@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "GitHub";
+}
+
+<h2>GitHub</h2>
+<br />
+<div class="form-horizontal">
+    @foreach (var item in Model)
+    {
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="text" value="@item" readonly/>
+            </div>
+        </div>
+    }
+</div>
